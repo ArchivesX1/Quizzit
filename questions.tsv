@@ -1,0 +1,32 @@
+id	question	a	b	c	d	correct	exp_a	exp_b	exp_c	exp_d
+1	Which OSI layer is responsible for routing?	Transport	Session	Network	Data Link	C	The Transport layer handles end-to-end communication, not routing.	The Session layer manages sessions between applications.	The Network layer decides routing paths and handles logical addressing.	The Data Link layer handles frames and MAC addressing, not routing.
+2	Which protocol uses port 53 for DNS queries?	TCP	UDP	Both A and B	ICMP	C	TCP is used for zone transfers, but not normal DNS queries alone.	UDP is sometimes used, but not exclusively.	DNS uses both TCP and UDP depending on query type.	ICMP is used for control messaging.
+3	What is the main purpose of ARP?	Resolve IP to MAC	Resolve MAC to IP	Assign IP addresses	Encrypt packets	A	Correct: ARP maps IP to MAC.	MAC to IP is done by RARP historically, not ARP.	DHCP assigns IPs.	ARP does not handle encryption.
+4	Which protocol is connectionless?	TCP	UDP	HTTPS	FTP	B	Incorrect: TCP is connection-oriented.	Correct: UDP is connectionless with no reliability.	HTTPS runs over TCP.	FTP runs over TCP.
+5	Which layer of the OSI model converts data into electrical signals?	Transport	Data Link	Physical	Session	C	The Transport layer handles segments, not signals.	The Data Link layer handles frames and MAC addressing.	The Physical layer handles bits and signaling.	The Session layer handles sessions.
+6	Which protocol is used for email sending?	IMAP	SMTP	DNS	POP3	B	IMAP is for reading email.	Correct: SMTP sends mail between servers.	DNS resolves names.	POP3 downloads email.
+7	Which is NOT a valid private IP range?	10.0.0.0/8	172.16.0.0/12	192.168.0.0/16	8.8.8.0/24	D	Correct: 10/8 is private.	172.16/12 is private.	192.168/16 is private.	8.8.8.0/24 is public (Google).
+8	Which protocol does ping use?	ICMP	TCP	UDP	ARP	A	Correct: Ping sends ICMP Echo messages.	TCP is not used by ping.	UDP is not used by ping.	ARP resolves IP→MAC.
+9	Which OSI layer uses MAC addresses?	Network	Data Link	Transport	Session	B	The Network layer uses IP addresses.	Correct: Data Link uses MACs.	The Transport layer uses ports.	The Session layer handles sessions.
+10	What is the port number for HTTPS?	80	8080	443	21	C	Port 80 is HTTP.	8080 is alternate HTTP.	Correct: HTTPS uses port 443.	21 is FTP.
+11	Which transport layer protocol guarantees delivery?	UDP	ICMP	TCP	ARP	C	UDP is unreliable.	ICMP is for control.	Correct: TCP ensures reliable delivery.	ARP is not transport.
+12	Which OSI layer includes switches?	Transport	Network	Data Link	Application	C	Switches are not Transport.	Routers are Network.	Correct: Switches are Data Link devices.	Applications are layer 7.
+13	Which protocol retrieves the MAC address of a device?	ICMP	ARP	DHCP	NAT	B	ICMP sends control messages.	Correct: ARP resolves IP to MAC.	DHCP assigns IPs.	NAT translates IPs.
+14	Which protocol uses port 22?	SSH	FTP	SNMP	DNS	A	Correct: SSH uses port 22.	FTP uses ports 20/21.	SNMP uses 161/162.	DNS uses 53.
+15	What layer is responsible for encryption?	Physical	Data Link	Session	Presentation	D	Physical does signals only.	Data Link does MAC and frames.	Session manages sessions.	Correct: Presentation handles encryption/formatting.
+16	Which is a connection-oriented protocol?	TCP	UDP	ICMP	HTTP	A	Correct: TCP is connection-oriented.	UDP is connectionless.	ICMP is not transport.	HTTP runs over TCP.
+17	Which port does DHCP use?	67/68	22	80	3389	A	Correct: DHCP uses 67 (server) and 68 (client).	22 is SSH.	80 is HTTP.	3389 is RDP.
+18	What does TTL in IP stand for?	Time To Live	Time To Load	Total Transmission Length	Transport Timer Limit	A	Correct: TTL limits hop count.	Not Time To Load.	Not transmission length.	Not related to transport timers.
+19	Which device separates broadcast domains?	Switch	Hub	Router	Repeater	C	Switches separate collision domains, same broadcast domain.	Hubs do nothing.	Correct: Routers break broadcast domains.	Repeaters only amplify signal.
+20	Which layer segments data?	Network	Transport	Physical	Data Link	B	The Network layer routes packets.	Correct: Transport layer segments data.	Physical sends bits.	Data Link does frames.
+21	Which protocol is used for secure web browsing?	FTP	HTTPS	TELNET	DHCP	B	FTP transfers files.	Correct: HTTPS is secure HTTP.	Telnet is insecure.	DHCP assigns IPs.
+22	Which layer of OSI is closest to the user?	Session	Application	Transport	Presentation	B	Session controls sessions.	Correct: Application interacts with user apps.	Transport handles segments.	Presentation formats data.
+23	What does NAT primarily do?	Map private to public IPs	Route traffic	Encrypt data	Resolve domain names	A	Correct: NAT maps private → public addresses.	Routing is done by routers.	NAT does not encrypt.	DNS resolves names.
+24	Which protocol is used for remote login securely?	Telnet	SSH	HTTP	SMTP	B	Telnet is insecure.	Correct: SSH provides encrypted remote access.	HTTP is not remote login.	SMTP sends email.
+25	Which addressing type is used by IPv6 for multicast?	FF00::/8	FE80::/10	::1/128	2001::/16	A	Correct: FF00::/8 is multicast.	FE80::/10 is link-local.	::1 is loopback.	2001::/16 is global unicast.
+26	Which protocol broadcasts a request on LAN?	ARP	FTP	DNS	SSH	A	Correct: ARP request is broadcast.	FTP is TCP.	DNS may use multicast or unicast.	SSH is TCP.
+27	What is the default subnet mask for Class C?	255.0.0.0	255.255.0.0	255.255.255.0	255.255.255.252	C	Not Class A.	Not Class B.	Correct: Class C uses /24.	/30 is 255.255.255.252.
+28	Which protocol is used to transfer files over TCP?	FTP	ICMP	ARP	UDP	A	Correct: FTP uses TCP 20/21.	ICMP is not transport.	ARP resolves MAC.	UDP does not guarantee.
+29	Which protocol helps find the gateway MAC address?	DNS	TCP	ARP	HTTP	C	DNS resolves domain names.	TCP handles connections.	Correct: ARP finds gateway MAC.	HTTP is web protocol.
+30	Which layer establishes, manages and terminates sessions?	Transport	Session	Data Link	Network	B	Transport handles segmentation.	Correct: Session manages sessions.	Data Link does frames.	Network routes packets.
+
